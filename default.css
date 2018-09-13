@@ -35,12 +35,15 @@ header {
   height: 80px;
   margin-top: 40px;
 }
-header img {
+.logo {
   position: absolute;
   top: 9px;
   left: 0;
   float: left;
   max-width: 23%;
+}
+.twitter_link {
+    text-align: right;
 }
 .ais-search-box {
   max-width: none;
