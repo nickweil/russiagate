@@ -98,13 +98,13 @@ header img {
   vertical-align: top;
 }
 .hit-image img {
-  max-width: 50%;
+  max-width: 48%;
 }
 .hit-content {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 50%;
+  width: 48%;
   margin-left: 3%;
   text-align: left;
   vertical-align: top;
