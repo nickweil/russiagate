@@ -95,18 +95,18 @@ header img {
 }
 .hit-image {
   display: inline-block;
-  width: 70%;
+  width: 68%;
   text-align: right;
   vertical-align: top;
 }
 .hit-image img {
-  max-width: 70%;
+  max-width: 68%;
 }
 .hit-content {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 30%;
+  width: 28%;
   margin-left: 3%;
   text-align: left;
   vertical-align: top;
