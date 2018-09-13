@@ -28,6 +28,17 @@ search.addWidget(
   })
 );
 
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#brand',
+      attributeName: 'brand',
+      limit: 2,
+      templates: {
+        header: getHeader('Brand'),
+      },
+    })
+  );
+
 // Add this after the other search.addWidget() calls
 search.addWidget(
   instantsearch.widgets.pagination({
