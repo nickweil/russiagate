@@ -97,6 +97,7 @@ header img {
   display: inline-block;
   width: 30%;
   text-align: right;
+  vertical-align: top;
 }
 .hit-image img {
   max-width: 30%;
@@ -105,7 +106,7 @@ header img {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 81%;
+  width: 70%;
   margin-left: 3%;
   vertical-align: top;
 }
