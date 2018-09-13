@@ -36,6 +36,7 @@ search.addWidget(
 	  templates: {
         header: getHeader('Brand'),
 	},
+	})
   );
 
 // Add this after the other search.addWidget() calls
@@ -43,7 +44,7 @@ search.addWidget(
   instantsearch.widgets.pagination({
     container: '#pagination'
   })
-)
+);
 
 
 // Add this after all the search.addWidget() calls
