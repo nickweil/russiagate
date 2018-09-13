@@ -40,9 +40,10 @@
 <script type="text/html" id="hit-template">
   <div class="hit">
     <div class="hit-content">
-      <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+		<h2 class="hit-name">{{{brand}}}</h2>
+        <p class="hit-category-breadcrumb">{{{name}}}</p>
+		<p class="hit-description">{{{_highlightResult.description.value}}}</p>
     </div>
-	</br></br>
 	<div class="hit-image">
       <img src="{{image}}" alt="{{name}}">
     </div>
