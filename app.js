@@ -33,9 +33,6 @@ search.addWidget(
       container: '#brand',
       attributeName: 'brand',
       limit: 2,
-      templates: {
-        header: getHeader('Brand'),
-      },
     })
   );
 
