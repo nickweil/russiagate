@@ -95,19 +95,20 @@ header img {
 }
 .hit-image {
   display: inline-block;
-  width: 30%;
+  width: 70%;
   text-align: right;
   vertical-align: top;
 }
 .hit-image img {
-  max-width: 30%;
+  max-width: 70%;
 }
 .hit-content {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 70%;
+  width: 30%;
   margin-left: 3%;
+  text-align: left;
   vertical-align: top;
 }
 .hit-stars {
