@@ -35,46 +35,6 @@ search.addWidget(
   })
 );
 
-search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#brand',
-      attributeName: 'brand',
-      limit: 5,
-      showMore: {
-        limit: 10,
-      },
-      searchForFacetValues: {
-        placeholder: 'Search for brands',
-        templates: {
-          noResults: '<div class="sffv_no-results">No matching brands.</div>',
-        },
-      },
-      templates: {
-        header: getHeader('Brand'),
-      },
-      collapsible: {
-        collapsed: false,
-      },
-    })
-  );
-
-  search.addWidget(
-    instantsearch.widgets.rangeSlider({
-      container: '#price',
-      attributeName: 'price',
-      tooltips: {
-        format(rawValue) {
-          return `$${Math.round(rawValue).toLocaleString()}`;
-        },
-      },
-      templates: {
-        header: getHeader('Price'),
-      },
-      collapsible: {
-        collapsed: false,
-      },
-    })
-  );
 
 // Add this after all the search.addWidget() calls
 search.start();
