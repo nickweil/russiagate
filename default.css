@@ -99,8 +99,7 @@ header img {
   text-align: right;
 }
 .hit-image img {
-  max-width: 100%;
-  max-height: 180px;
+  max-width: 30%;
 }
 .hit-content {
   font-size: 13px;
@@ -117,8 +116,8 @@ header img {
 }
 
 .hit-content .hit-price {
-  float: right;
-  margin-left: 20px;
+  float: left;
+  margin-left: 0px;
   color: #ffffff;
   background: #383838;
   padding: 4px;
