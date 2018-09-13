@@ -111,7 +111,7 @@ header img {
 .hit-image {
   display: inline-block;
   text-align: right;
-  width: 60%;
+  width: 72%;
   vertical-align: center;
 }
 
@@ -122,10 +122,10 @@ header img {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 25%;
+  width: 20%;
   margin-left: 3%;
   text-align: left;
-  vertical-align: center;
+  vertical-align: top;
 }
 .hit-stars {
   font-size: 17px;
