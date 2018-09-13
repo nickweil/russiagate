@@ -31,7 +31,7 @@ search.addWidget(
   search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#brand',
-      attributeName: 'brand',
+      attributeName: 'Sender',
       limit: 2,
 	  templates: {
         header: getHeader('Brand'),
