@@ -43,7 +43,7 @@ search.addWidget(
   instantsearch.widgets.pagination({
     container: '#pagination'
   })
-);
+)
 
 
 // Add this after all the search.addWidget() calls
