@@ -95,8 +95,8 @@ header img {
 }
 .hit-image {
   display: inline-block;
-  width: 100%;
-  text-align: center;
+  width: 30%;
+  text-align: right;
 }
 .hit-image img {
   max-width: 100%;
