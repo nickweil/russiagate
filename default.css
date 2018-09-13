@@ -101,7 +101,7 @@ header img {
 .hit-sender {
   display: inline-block;
   text-align: left;
-  width: 10%;
+  width: 5%;
   vertical-align: top;
 }
 .hit-sender img {
@@ -112,7 +112,7 @@ header img {
   display: inline-block;
   text-align: right;
   width: 60%;
-  vertical-align: top;
+  vertical-align: center;
 }
 
 .hit-image img {
@@ -125,7 +125,7 @@ header img {
   width: 25%;
   margin-left: 3%;
   text-align: left;
-  vertical-align: top;
+  vertical-align: center;
 }
 .hit-stars {
   font-size: 17px;
