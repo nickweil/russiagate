@@ -14,7 +14,7 @@
  <!-- /INTERFACE -->
   <header>
 	<a href="." class="logo"><img src="spygate_search_logo.png"/></a>
-	<a href="https://twitter.com/nick_weil" class="twitter_link"><img src="black_twitter_logo.png"/></a>
+	<!--<a href="https://twitter.com/nick_weil" class="twitter_link"><img src="black_twitter_logo.png"/></a> -->
   </header>
   
   <main>
@@ -39,11 +39,12 @@
 <!-- Add this to your HTML document -->
 <script type="text/html" id="hit-template">
   <div class="hit">
-    <div class="hit-image">
-      <img src="{{image}}" alt="{{name}}">
-    </div></br></br>
     <div class="hit-content">
       <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+    </div>
+	</br></br>
+	<div class="hit-image">
+      <img src="{{image}}" alt="{{name}}">
     </div>
   </div>
 </script>
