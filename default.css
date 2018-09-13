@@ -6,6 +6,11 @@ html {
   overflow-y: scroll;
   background: #FFF;
 }
+
+h1, h2, h3 {
+    display: inline;
+}
+
 header, main, #no-results, footer {
   width: 1000px;
   margin: 0 auto;
@@ -84,6 +89,7 @@ header img {
   padding: 10px 0;
   border-top: 2px solid #eee;
 }
+
 .hit {
   font-size: 0;
   padding: 15px 0;
