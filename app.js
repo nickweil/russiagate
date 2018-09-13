@@ -31,10 +31,10 @@ search.addWidget(
   search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#brand',
-      attributeName: 'Sender',
+      attributeName: 'brand',
       limit: 2,
 	  templates: {
-        header: getHeader('Brand'),
+        header: getHeader('Sender'),
 	},
 	})
   );
