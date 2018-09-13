@@ -49,3 +49,34 @@ search.addWidget(
 
 // Add this after all the search.addWidget() calls
 search.start();
+
+// ---------------------
+//
+//  Helper functions
+//
+// ---------------------
+function getTemplate(templateName) {
+  return document.querySelector(`#${templateName}-template`).innerHTML;
+}
+
+function getHeader(title) {
+  return `<h5>${title}</h5>`;
+}
+
+function getCategoryBreadcrumb(item) {
+  const highlightValues = item._highlightResult.categories || [];
+  return highlightValues.map(category => category.value).join(' > ');
+}
+
+function getStarsHTML(rating, maxRating) {
+  let html = '';
+  const newRating = maxRating || 5;
+
+  for (let i = 0; i < newRating; ++i) {
+    html += `<span class="ais-star-rating--star${
+      i < rating ? '' : '__empty'
+    }"></span>`;
+  }
+
+  return html;
+}
