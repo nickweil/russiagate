@@ -94,12 +94,11 @@ header img {
 }
 .hit-image {
   display: inline-block;
-  width: 68%;
   text-align: right;
   vertical-align: top;
 }
 .hit-image img {
-  max-width: 68%;
+  max-width: 50%;
 }
 .hit-content {
   font-size: 13px;
