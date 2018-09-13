@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>The Spygate Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
+  Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
+  <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+ <!-- /INTERFACE -->
+  <header>
+	<a href="."><img src="images/spygate_search_logo.png"/></a>
+  </header>
+  
+  <main>
+	<div id="left-column">
+		<div id="price" class="facet"></div>
+		<div class="facet-title">Dates</div>
+		<div id="search-input" placeholder="Search for something"></div>
+    </div>
+
+    <div id="right-column">
+		<div id="hits"></div>
+		<div id="pagination"></div>
+    </div>
+
+  </main>
+
+</body>
+
+ <!-- /INTERFACE -->
+  
+
+<!-- /TEMPLATES -->
+<!-- Add this to your HTML document -->
+<script type="text/html" id="hit-template">
+  <div class="hit">
+    <div class="hit-image">
+      <img src="{{image}}" alt="{{name}}">
+    </div></br></br>
+    <div class="hit-content">
+      <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+    </div>
+  </div>
+</script>
+<!-- /TEMPLATES -->
+
+<!-- /SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<script src="app.js"></script>
+<!-- /SCRIPTS -->
+
+</body>
+</html>
