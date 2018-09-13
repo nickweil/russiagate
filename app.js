@@ -34,7 +34,7 @@ search.addWidget(
       attributeName: 'brand',
       limit: 2,
 	  templates: {
-        header: getHeader('Brand'),
+        header: getHeader('Sender'),
 	},
 	})
   );
