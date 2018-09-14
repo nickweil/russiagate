@@ -20,11 +20,11 @@ main {
 }
 #left-column {
   float: left;
-  width: 23%;
+  width: 19%;
 }
 #right-column {
-  width: 74%;
-  margin-left: 26%;
+  width: 78%;
+  margin-left: 22%;
 }
 
 .clear:after {
@@ -43,7 +43,7 @@ header img {
   position: absolute;
   top: 9px;
   left: 0;
-  float: left;
+  float: center;
   max-width: 23%;
 }
 .ais-search-box {
