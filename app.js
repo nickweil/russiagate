@@ -3,7 +3,7 @@ var search = instantsearch({
   // Replace with your own values
   appId: 'DTH6V8NWJ2',
   apiKey: 'fd1f8a02a87cf784faf55a8a686700e7', // search only API key, no ADMIN key
-  indexName: 'texts',
+  indexName: 'records',
   urlSync: true,
   searchParameters: {
     hitsPerPage: 100
