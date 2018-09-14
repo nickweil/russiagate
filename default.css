@@ -101,7 +101,7 @@ header img {
 .hit-sender {
   display: inline-block;
   text-align: left;
-  width: 5%;
+  width: 7%;
   vertical-align: top;
 }
 .hit-sender img {
@@ -111,7 +111,7 @@ header img {
 .hit-image {
   display: inline-block;
   text-align: right;
-  width: 72%;
+  width: 75%;
   vertical-align: center;
 }
 
@@ -122,7 +122,7 @@ header img {
   font-size: 13px;
   font-weight: 300;
   display: inline-block;
-  width: 20%;
+  width: 25%;
   margin-left: 3%;
   text-align: left;
   vertical-align: top;
