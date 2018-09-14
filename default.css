@@ -20,11 +20,11 @@ main {
 }
 #left-column {
   float: left;
-  width: 19%;
+  width: 15%;
 }
 #right-column {
-  width: 78%;
-  margin-left: 22%;
+  width: 82%;
+  margin-left: 18%;
 }
 
 .clear:after {
