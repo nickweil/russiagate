@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>The Spygate Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
+  Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
+  <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+ <!-- /INTERFACE -->
+  <header>
+	<a href="."><img src="spygate_search_logo.png"/></a>
+	<!--<a href="https://twitter.com/nick_weil" class="twitter_link"><img src="black_twitter_logo.png"/></a> -->
+  </header>
+  
+  <main>
+	<div id="left-column">
+		<div id="search-input" placeholder="Search for something"></div>
+		<div id="search-suggestions">
+			<div id="search-suggestions-header">TRY:</div>
+			<div id="suggested-searches">"Trump", "Brennan", "Andy", "Bill", "lures", "Sunday", "arepa" </div>
+		</div>
+		<div class="left-column-header">PICK A DATE</div>
+			<div id="search-suggestions">
+				<div id="search-suggestions-header">(COMING SOON)</div>
+				<div id="suggested-searches"></div>
+		</div>
+		<div class="left-column-header">FILTER</div>
+		<div id="batch-refinement"></div>
+		<div id="sender-refinement"></div>
+	</div>
+
+    <div id="right-column">
+		<div id="hits"></div>
+		<div id="pagination"></div>
+    </div>
+
+  </main>
+
+</body>
+
+ <!-- /INTERFACE -->
+  
+
+<!-- /TEMPLATES -->
+<!-- Add this to your HTML document -->
+<script type="text/html" id="hit-template">
+  <div class="hit">
+    <div class="hit-content">
+        <p class="hit-category-breadcrumb">{{{date}}} {{{weekday}}}</p>
+		<!--<h3 class="hit-name">{{{sender}}}</h3>-->
+    </div>
+	<div class="hit-sender">
+		<img src="{{senderimgurl}}" alt="{{sender}}">
+    </div>
+	<div class="hit-image">
+		<img src="{{textimgurl}}" alt="{{date}}">
+    </div>
+  </div>
+</script>
+<!-- /TEMPLATES -->
+
+<!-- /SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<script src="app.js"></script>
+<!-- /SCRIPTS -->
+
+</body>
+</html>
