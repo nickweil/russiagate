@@ -118,6 +118,12 @@ header img {
 	margin-bottom: 20px;
 }
 
+#sender-refinement .ais-refinement-list--label{
+	margin-left: 0%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 /* HITS */
 #hits {
   margin: 4px 0;
@@ -285,6 +291,7 @@ header img {
 .ais-menu--link {
   cursor: pointer;
   line-height: 1.5em;
+  font-size: 14px;
 }
 
 .sffv_no-results{
@@ -309,6 +316,7 @@ header img {
 .ais-toggle--count {
   position: relative;
   top: 3px;
+  font-size: 14px;
   float: right;
   color: #999;
 }
