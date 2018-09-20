@@ -10,7 +10,7 @@ var search = instantsearch({
   }
 });
 
-index.setSettings({
+texts.setSettings({
   paginationLimitedTo: 5000
 });
 
