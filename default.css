@@ -72,6 +72,7 @@ header img {
   margin-left: 0%;
 }
 #search-input input {
+  font-size: 14px;
   padding-left: 10x;
   max-width: 110px;  
   padding: 5px 10px 5px 30px;
@@ -86,8 +87,6 @@ header img {
   border-color: #ff0000;
 }
 #search-input input::-webkit-input-placeholder, #search-input input:-moz-placeholder, #search-input input:-moz-placeholder, #search-input input:-ms-input-placeholder {
-  font-weight: 100;
-  font-size: 14px;
   color: #999;
 } 
 
