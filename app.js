@@ -7,6 +7,7 @@ var search = instantsearch({
   urlSync: true,
   searchParameters: {
     hitsPerPage: 100
+	paginationLimitedTo: 5000
   }
 });
 
