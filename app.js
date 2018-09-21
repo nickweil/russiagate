@@ -10,6 +10,10 @@ var search = instantsearch({
   }
 });
 
+/*texts.setSettings({
+  paginationLimitedTo: 5000
+});*/
+
 // Add this after the previous JavaScript code
 search.addWidget(
   instantsearch.widgets.searchBox({
