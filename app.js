@@ -64,17 +64,7 @@ search.addWidget(
 // Add this after all the search.addWidget() calls
 search.start();
 
-$(function(){
-  $("#home-button").on({
-   mouseenter: function(){
-    $(this).attr('src','red_twitter_logo.png');
-  },
-  mouseleave: function(){
-    $(this).attr('src','black_twitter_logo.png');
-  }
-  });
-  
-});
+
 
 // ---------------------
 //

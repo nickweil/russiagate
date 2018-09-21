@@ -16,7 +16,8 @@
 	<div id=logo_image><a href="."><img src="spygate_search_logo.png"/></a></div>
 	<div id=links>
 		<a href="https://github.com/nickweil/russiagate">GIT</a>
-		<a href="https://twitter.com/spygateproject"><img id = "home-button" src="black_twitter_logo.png"/></a>
+		<a href="https://twitter.com/spygateproject"><img src="black_twitter_logo.png" onMouseOver="MouseRollover(this)" 
+onMouseOut="MouseOut(this)"/></a>
 	</div>
 	<!--<a href="https://twitter.com/nick_weil" class="twitter_link"><img src="black_twitter_logo.png"/></a> -->
   </header>
@@ -81,6 +82,14 @@
 <!-- /SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <script src="app.js"></script>
+<script type="text/javascript">
+        function MouseRollover(MyImage) {
+        MyImage.src = "red_twitter_logo.png";
+    }
+        function MouseOut(MyImage) {
+        MyImage.src = "red_twitter_logo.png";
+    }
+</script>
 <!-- /SCRIPTS -->
 
 </body>
