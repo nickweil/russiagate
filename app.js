@@ -67,10 +67,10 @@ search.start();
 $(function(){
   $("#home-button").on({
    mouseenter: function(){
-    $(this).attr('src','http://www.clker.com/cliparts/d/3/R/P/q/e/hot-pink-home-icon-md.png');
+    $(this).attr('src','red_twitter_logo.png');
   },
   mouseleave: function(){
-    $(this).attr('src','http://openclipart.org/image/800px/svg_to_png/17103/claudita_home_icon.png');
+    $(this).attr('src','black_twitter_logo.png');
   }
   });
   
