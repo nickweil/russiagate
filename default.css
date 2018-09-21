@@ -129,7 +129,7 @@ header {
 }
 
 #algolia-logo img {
-	width: 40px;
+	width: 100%;
 }
 
 #search-suggestions {
