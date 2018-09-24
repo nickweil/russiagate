@@ -321,9 +321,12 @@ header {
 .ais-refinementlist--header.ais-header {
 	margin: 0 0 6px;
 	padding: 0 0 6px;
+	border-bottom: 2px solid #eee;
+}
+
+.ais-refinementlist--header.ais-header {
 	text-transform: uppercase;
 	font-size: 14px;
-	border-bottom: 2px solid #eee;
 }
 
 .ais-refinement-list--label,
