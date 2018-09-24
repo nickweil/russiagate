@@ -42,7 +42,7 @@ header {
 }
 #logo_image {
   position: absolute;
-  top: 9px;
+  top: 25px;
   left: 0;
   float: left;
 }
@@ -65,8 +65,8 @@ header {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 #links img {
