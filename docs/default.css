@@ -318,7 +318,7 @@ header {
   cursor: pointer;
 }
 
-.ais-refinementlist--header {
+.ais-refinementlist--header.ais-header {
 	margin: 0 0 6px;
 	padding: 0 0 6px;
 	text-transform: uppercase;
