@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
   Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
-  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="../default.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 	<div id=links>
 		<a href="charts">CHARTS</a>
 		<a href="https://github.com/nickweil/russiagate">GIT</a>
-		<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="black_twitter_logo.png" onMouseOver="MouseRollover()" 
+		<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="../black_twitter_logo.png" onMouseOver="MouseRollover()" 
 onMouseOut="MouseOut()"/></a>
 	</div>
 </header>
@@ -26,5 +26,17 @@ onMouseOut="MouseOut()"/></a>
 </main>
 
 </body>
+
+<!-- /SCRIPTS -->
+<script src="../app.js"></script>
+<script type="text/javascript">
+        function MouseRollover() {
+        twttrlogo.src = "../red_twitter_logo.png";
+    }
+        function MouseOut() {
+        twttrlogo.src = "../black_twitter_logo.png";
+    }
+</script>
+<!-- /SCRIPTS -->
 
 </html>
