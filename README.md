@@ -1,4 +1,4 @@
-# russiagate
+# The #Spygate Project
 
 These are the source files for the searchable Strzok-Page database and other resources available at thespygateproject.org.
 
