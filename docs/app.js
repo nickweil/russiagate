@@ -64,6 +64,8 @@ search.addWidget(
 // Add this after all the search.addWidget() calls
 search.start();
 
+
+
 // ---------------------
 //
 //  Helper functions

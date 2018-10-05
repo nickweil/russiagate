@@ -1,6 +1,7 @@
 /* GENERAL */
 * {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
 }
 html {
   overflow-y: scroll;
@@ -42,14 +43,13 @@ header {
 }
 #logo_image {
   position: absolute;
-  top: 9px;
+  top: 25px;
   left: 0;
   float: left;
-  height: 40px;
 }
 
 #logo_image img {
-  height: 70px;
+  height: 50px;
 }
 
 #links
@@ -62,16 +62,16 @@ header {
 }
 
 #links a, #links a:visited {
-	font-size: 40px;
+	font-size: 38px;
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 #links img {
-  height: 40px;
+  height: 33px;
 }
 
 #links a:hover
@@ -121,6 +121,15 @@ header {
 #search-input input::-webkit-input-placeholder, #search-input input:-moz-placeholder, #search-input input:-moz-placeholder, #search-input input:-ms-input-placeholder {
   color: #999;
 } 
+
+#algolia-logo {
+	margin-left: 0%;
+	margin-top: 10px;
+}
+
+#algolia-logo img {
+	width: 80%;
+}
 
 #search-suggestions {
 	margin-left: 0%;
@@ -308,14 +317,6 @@ header {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.ais-refinementlist--header {
-	margin: 0 0 6px;
-	padding: 0 0 6px;
-	text-transform: uppercase;
-	font-size: 14px;
-	border-bottom: 2px solid #eee;
 }
 
 .ais-refinement-list--label,

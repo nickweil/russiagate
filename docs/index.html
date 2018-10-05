@@ -15,30 +15,33 @@
   <header>
 	<div id=logo_image><a href="."><img src="spygate_search_logo.png"/></a></div>
 	<div id=links>
-		<a href="https://github.com/nickweil/russiagate">GIT</a>
-		<a href="https://twitter.com/spygateproject"><img src="black_twitter_logo.png"/></a>
+		<a href=".">TEXTS</a><a href="about">ABOUT</a>
+		<!--<a href="https://github.com/nickweil/russiagate">GIT</a>-->
+		<a href="https://twitter.com/spygateproject">TWTTR</a>
+		<!--<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="black_twitter_logo.png" onMouseOver="MouseRollover()" 
+onMouseOut="MouseOut()"/></a>-->
 	</div>
-	<!--<a href="https://twitter.com/nick_weil" class="twitter_link"><img src="black_twitter_logo.png"/></a> -->
   </header>
   
   <main>
 	<div id="left-column">
 		<div id="search-input" placeholder="Search for something"></div>
+		<div id="algolia-logo"><img src="search-by-algolia-light-background-b5afedfa.png"/></div>
 		<div id="search-suggestions">
 			<div id="search-suggestions-header">TRY:</div>
-			<div id="suggested-searches">"Trump", "Angry", "MYE", "Bill", "lures", "Sunday", "arepa" </div>
+			<div id="suggested-searches">"trump", "angry", "MYE", "bill", "lures", "Sunday", "arepa" </div>
 		</div>
 		<div class="left-column-header">IMPORTANT DATES</div>
 			<div id="search-suggestions">
 				<div id="search-suggestions-header"></div>
 				<div id="suggested-searches">
-				8/21/15-Strzok assigned to Clinton Case<br/><br/>
+				8/21/15-Strzok moves onto Clinton Case<br/><br/>
 				1/24/16-Page becomes McCabe's counsel<br/><br/>
-				7/5/16-Comey publiclly exonerates Clinton<br/><br/>
+				7/5/16-Comey publicly exonerates Clinton<br/><br/>
 				7/31/16-Start of Crossfire Hurricane<br/><br/>
 				9/9/16-Strzok briefs Mike Pence<br/><br/>
 				11/8/16-Trump wins the 2016 election<br/><br/>
-				1/24/17-Strzok interveiws Mike Flynn<br/><br/>
+				1/24/17-Strzok interviews Mike Flynn<br/><br/>
 				5/9/17-Comey fired as director of FBI<br/><br/>
 				5/17/17-Special Counsel Mueller named
 				</div>
@@ -81,6 +84,14 @@
 <!-- /SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <script src="app.js"></script>
+<script type="text/javascript">
+        function MouseRollover() {
+        twttrlogo.src = "red_twitter_logo.png";
+    }
+        function MouseOut() {
+        twttrlogo.src = "black_twitter_logo.png";
+    }
+</script>
 <!-- /SCRIPTS -->
 
 </body>
