@@ -22,11 +22,11 @@ main {
 }
 #left-column {
   float: left;
-  width: 15%;
+  width: 20%;
 }
 #right-column {
-  width: 82%;
-  margin-left: 18%;
+  width: 80%;
+  margin-left: 20%;
 }
 
 .clear:after {
@@ -128,7 +128,7 @@ header {
 }
 
 #algolia-logo img {
-	width: 80%;
+	width: 60%;
 }
 
 #search-suggestions {
