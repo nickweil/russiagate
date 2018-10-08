@@ -23,7 +23,7 @@ main {
 #left-column {
   position: fixed;
   float: left;
-  width: 20%;
+  width: 200px;
 }
 #right-column {
   width: 80%;
