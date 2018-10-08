@@ -40,6 +40,7 @@ header {
   position: relative;
   height: 80px;
   margin-top: 40px;
+  border-bottom: 2px solid #eee;
 }
 #logo_image {
   position: absolute;
@@ -168,7 +169,7 @@ header {
 #hits {
   margin: 4px 0;
   padding: 10px 0;
-  border-top: 2px solid #eee;
+/*  border-top: 2px solid #eee;*/
 }
 
 .hit {
