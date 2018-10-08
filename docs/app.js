@@ -6,7 +6,7 @@ var search = instantsearch({
   indexName: 'texts',
   urlSync: true,
   searchParameters: {
-    hitsPerPage: 100
+    hitsPerPage: 1000
   }
 });
 
