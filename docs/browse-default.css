@@ -21,8 +21,10 @@ main {
   min-height: 360px;
 }
 #left-column {
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 6px;
+  float: left;
   width: 20%;
 }
 #right-column {
