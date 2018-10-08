@@ -39,7 +39,7 @@ main {
 header {
   position: relative;
   height: 80px;
-  margin-top: 40px;
+  margin-top: 20px;
   border-bottom: 2px solid #eee;
 }
 #logo_image {
