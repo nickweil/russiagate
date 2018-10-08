@@ -38,8 +38,8 @@ main {
 /* INPUT */
 header {
   position: relative;
-  height: 60px;
-  margin-top: 20px;
+  height: 80px;
+  margin-top: 40px;
   border-bottom: 2px solid #eee;
 }
 #logo_image {
