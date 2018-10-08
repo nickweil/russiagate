@@ -28,11 +28,7 @@ onMouseOut="MouseOut()"/></a>-->
 	<div id="left-column">
 		<div id="search-input" placeholder="Search for something"></div>
 		<div id="algolia-logo"><img src="../search-by-algolia-light-background-b5afedfa.png"/></div>
-		<div id="search-suggestions">
-			<div id="search-suggestions-header">TRY:</div>
-			<div id="suggested-searches">"trump", "angry", "MYE", "bill", "lures", "Sunday", "arepa" </div>
-		</div>
-		<div class="left-column-header">IMPORTANT DATES</div>
+		<div class="left-column-header">JUMP TO</div>
 			<div id="search-suggestions">
 				<div id="search-suggestions-header"></div>
 				<div id="suggested-searches">
@@ -47,9 +43,6 @@ onMouseOut="MouseOut()"/></a>-->
 				5/17/17-Special Counsel Mueller named
 				</div>
 		</div>
-		<div class="left-column-header">FILTER</div>
-		<div id="batch-refinement"></div>
-		<div id="sender-refinement"></div>
 	</div>
 
     <div id="right-column">
@@ -67,7 +60,7 @@ onMouseOut="MouseOut()"/></a>-->
 <!-- /TEMPLATES -->
 <!-- Add this to your HTML document -->
 <script type="text/html" id="hit-template">
-  <div class="hit">
+  <div class="hit" id="{{unixtimestamp}}">
     <div class="hit-content">
         <p class="hit-category-breadcrumb">{{{date}}} {{{weekday}}}</p>
 		<!--<h3 class="hit-name">{{{sender}}}</h3>-->
@@ -84,7 +77,7 @@ onMouseOut="MouseOut()"/></a>-->
 
 <!-- /SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
-<script src="../app.js"></script>
+<script src="../browse.js"></script>
 <script type="text/javascript">
         function MouseRollover() {
         twttrlogo.src = "red_twitter_logo.png";
