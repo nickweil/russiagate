@@ -51,6 +51,16 @@ search.addWidget(
       }
     })
   );
+  
+    search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#weekday-refinement',
+      attributeName: 'weekday',
+      templates: {
+        header: 'Day of the week'
+      }
+    })
+  );
 
 
 // Add this after the other search.addWidget() calls
