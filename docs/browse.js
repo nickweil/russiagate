@@ -32,27 +32,6 @@ search.addWidget(
   })
 );
 
-search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#batch-refinement',
-      attributeName: 'batch',
-      templates: {
-        header: 'Batch'
-      }
-    })
-  );
-  
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#sender-refinement',
-      attributeName: 'sender',
-      templates: {
-        header: 'Sender'
-      }
-    })
-  );
-
-
 // Add this after the other search.addWidget() calls
 search.addWidget(
   instantsearch.widgets.pagination({
