@@ -8,10 +8,6 @@ html {
   background: #FFF;
 }
 
-h1, h2, h3 {
-    display: inline;
-}
-
 
 header, main, #no-results, footer {
   width: 1000px;
