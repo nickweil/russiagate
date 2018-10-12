@@ -1,7 +1,6 @@
 /* GENERAL */
 * {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 14px;
 }
 html {
   overflow-y: scroll;
@@ -83,6 +82,10 @@ header {
 	text-transform: uppercase;
 	border-bottom: 2px solid #eee;
 }
+.ais-refinement-list--header.ais-header {
+	font-size: 14px;
+}
+
 .ais-search-box {
   max-width: 100%;
 }
