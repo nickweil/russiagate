@@ -67,7 +67,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.pagination({
     container: '#pagination',
-	padding: 10,
+	padding: 8,
 	autoHideContainer: true
   })
 );
