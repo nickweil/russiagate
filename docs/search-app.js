@@ -66,7 +66,9 @@ search.addWidget(
 // Add this after the other search.addWidget() calls
 search.addWidget(
   instantsearch.widgets.pagination({
-    container: '#pagination'
+    container: '#pagination',
+	padding: 8,
+	autoHideContainer: true
   })
 );
 
