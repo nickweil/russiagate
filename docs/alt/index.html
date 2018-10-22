@@ -21,12 +21,32 @@ onMouseOut="MouseOut()"/></a>-->
 	</div>
 </header>
   
-  <main>
+    <main>
+	<div id="left-column">
+		<div id="search-input" placeholder="Search for something"></div>
+		<div id="algolia-logo"><img src="search-by-algolia-light-background-b5afedfa.png"/></div>
+		<div id="search-suggestions">
+			<div id="search-suggestions-header">TRY:</div>
+			<div id="suggested-searches">"trump", "angry", "MYE", "brennan", "lures", "DNI", "mission ridge", "arepa" </div>
+		</div>
+		<div class="left-column-header">FILTER</div>
+		<div id="batch-refinement"></div>
+		<div id="sender-refinement"></div>
+		<div id="weekday-refinement"></div>
+	</div>
 
+    <div id="right-column">
 		<div id="hits"></div>
-		<div id="pagination"></div>
+
+    </div>
 
   </main>
+  <footer>
+	<div id="pagination"></div>
+	</br></br>
+    Source Code on <a href="https://github.com/nickweil/russiagate">Github</a> -
+    Contact spygatetexts@protonmail.com for more information
+  </footer>
   
 </body>
 
