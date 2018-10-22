@@ -10,6 +10,10 @@ var search = instantsearch({
   }
 });
 
+/*texts.setSettings({
+  paginationLimitedTo: 5000
+});*/
+
 // Add this after the previous JavaScript code
 search.addWidget(
   instantsearch.widgets.searchBox({
@@ -28,12 +32,43 @@ search.addWidget(
   })
 );
 
+search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#batch-refinement',
+      attributeName: 'batch',
+      templates: {
+        header: 'Batch'
+      }
+    })
+  );
+  
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#sender-refinement',
+      attributeName: 'sender',
+      templates: {
+        header: 'Sender'
+      }
+    })
+  );
+  
+    search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#weekday-refinement',
+      attributeName: 'weekday',
+      templates: {
+        header: 'Day of the week'
+      }
+    })
+  );
 
 
 // Add this after the other search.addWidget() calls
 search.addWidget(
   instantsearch.widgets.pagination({
-    container: '#pagination'
+    container: '#pagination',
+	padding: 8,
+	autoHideContainer: true
   })
 );
 
@@ -41,15 +76,35 @@ search.addWidget(
 // Add this after all the search.addWidget() calls
 search.start();
 
-function myfunction() {
-	document.body.style.background = "blue";
-	
+
+
+// ---------------------
+//
+//  Helper functions
+//
+// ---------------------
+function getTemplate(templateName) {
+  return document.querySelector(`#${templateName}-template`).innerHTML;
 }
 
-/*function myfunction() {
-	var x = document.getElementsByClassName("hit-category-breadcrumb");
-	var i;
-		for (i = 0; i < x.length; i++) {
-		x[i].style.backgroundColor = "red";
-	}
-}*/
+function getHeader(title) {
+  return `<h5>${title}</h5>`;
+}
+
+function getCategoryBreadcrumb(item) {
+  const highlightValues = item._highlightResult.categories || [];
+  return highlightValues.map(category => category.value).join(' > ');
+}
+
+function getStarsHTML(rating, maxRating) {
+  let html = '';
+  const newRating = maxRating || 5;
+
+  for (let i = 0; i < newRating; ++i) {
+    html += `<span class="ais-star-rating--star${
+      i < rating ? '' : '__empty'
+    }"></span>`;
+  }
+
+  return html;
+}
