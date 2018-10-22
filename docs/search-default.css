@@ -173,13 +173,15 @@ header {
 .hit {
   font-size: 0;
   padding: 0px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .hit-name {
   margin: 0;
 }
 
 .hit-sender {
-  display: inline-block;
   text-align: left;
   width: 6%;
   vertical-align: top;
@@ -189,23 +191,20 @@ header {
 }
 
 .hit-image {
-  display: inline-block;
-  text-align: right;
+  align-self: flex-end;
   width: 78%;
-  vertical-align: center;
 }
 
 .hit-image img {
   max-width: 100%;
 }
+
 .hit-content {
   font-size: 14px;
   font-weight: 300;
-  display: inline-block;
   width: 15%;
   margin-left: 3%;
   text-align: right;
-  vertical-align: top;
 }
 
 
