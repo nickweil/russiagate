@@ -56,17 +56,14 @@ onMouseOut="MouseOut()"/></a>-->
 <!-- /TEMPLATES -->
 <!-- Add this to your HTML document -->
 <script type="text/html" id="hit-template">
-  <div class="hit">
-  	<div class="hit-image">
-		<img src="{{textimgurl}}" alt="{{date}}">
-    </div>
-    <div class="hit-content">
-        <p class="hit-category-breadcrumb">
-		{{{contents}}}
-		</p>
-    </div>
-	<div class="clear"></div>
-    </div>
+	<div class="hits">
+		<div class="hit-content-{{{sender}}}">
+			<p class="message">
+				{{{contents}}}
+			</p>
+		</div>
+		<div class="clear"></div>
+	</div>
 </script>
 <!-- /TEMPLATES -->
 
