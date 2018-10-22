@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spygate Texts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
+  Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
+  <link rel="stylesheet" href="search-default.css">
+</head>
+
+<body>
+ <!-- /INTERFACE -->
+  <header>
+	<div id=logo_image><a href="."><img src="spygate_search_logo.png"/></a></div>
+	<div id=links>
+		<a href=".">SEARCH</a><a href="about">ABOUT</a>
+		<!--<a href="https://github.com/nickweil/russiagate">GIT</a>-->
+		<!--<a href="https://twitter.com/spygateproject">TWTTR</a>-->
+		<!--<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="black_twitter_logo.png" onMouseOver="MouseRollover()" 
+onMouseOut="MouseOut()"/></a>-->
+	</div>
+  </header>
+  
+  <main>
+	<div id="left-column">
+		<div id="search-input" placeholder="Search for something"></div>
+		<div id="algolia-logo"><img src="search-by-algolia-light-background-b5afedfa.png"/></div>
+		<div id="search-suggestions">
+			<div id="search-suggestions-header">TRY:</div>
+			<div id="suggested-searches">"trump", "angry", "MYE", "brennan", "lures", "DNI", "arepa" </div>
+		</div>
+		<div class="left-column-header">FILTER</div>
+		<div id="batch-refinement"></div>
+		<div id="sender-refinement"></div>
+		<div id="weekday-refinement"></div>
+	</div>
+
+    <div id="right-column">
+		<div id="hits"></div>
+
+    </div>
+
+  </main>
+  <footer>
+	<div id="pagination"></div>
+	</br></br>
+    Source Code on <a href="https://github.com/nickweil/russiagate">Github</a> -
+    Contact spygatetexts@protonmail.com for more information
+  </footer>
+
+</body>
+
+ <!-- /INTERFACE -->
+  
+
+<!-- /TEMPLATES -->
+<!-- Add this to your HTML document -->
+<script type="text/html" id="hit-template">
+  <div class="hit" id="{{unixtimestamp}}">
+    <div class="hit-content">
+        <p class="hit-category-breadcrumb">{{{date}}} {{{weekday}}}</p>
+		<!--<h3 class="hit-name">{{{sender}}}</h3>-->
+    </div>
+	<div class="hit-sender">
+		<img src="{{senderimgurl}}" alt="{{sender}}">
+    </div>
+	<div class="hit-image">
+		<img src="{{textimgurl}}" alt="{{date}}">
+    </div>
+  </div>
+</script>
+<!-- /TEMPLATES -->
+
+<!-- /SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<script src="search-app.js"></script>
+<script type="text/javascript">
+        function MouseRollover() {
+        twttrlogo.src = "red_twitter_logo.png";
+    }
+        function MouseOut() {
+        twttrlogo.src = "black_twitter_logo.png";
+    }
+</script>
+<!-- /SCRIPTS -->
+
+</body>
+</html>
