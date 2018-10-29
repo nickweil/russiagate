@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spygate Texts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
+  Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
+  <link rel="stylesheet" href="../search-default.css">
+  <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+	
+</head>
+
+<body>
+<header>
+	<div id=logo_image><a href="../"><img src="../spygate_search_logo.png"/></a></div>
+	<div id=links>
+		<a href="../">SEARCH</a><a href=".">ABOUT</a>
+		<!--<a href="https://github.com/nickweil/russiagate">GIT</a>
+		<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="../black_twitter_logo.png" onMouseOver="MouseRollover()" 
+onMouseOut="MouseOut()"/></a>-->
+	</div>
+</header>
+  
+<main>
+	<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+	<script type="text/javascript">
+		timeline = new TL.Timeline('timeline-embed','https://docs.google.com/spreadsheets/d/1gejo4aUxn7i0g53Esdn2lB-qmkZ-a2f_cLET99SmrsI/edit?usp=sharing');
+    </script>
+</main>
+
+  <footer>
+    Source Code on <a href="https://github.com/nickweil/russiagate">Github</a> -
+    Contact spygatetexts@protonmail.com for more information
+  </footer>
+
+</body>
+
+
+
+</html>
