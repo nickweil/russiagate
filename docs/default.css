@@ -65,6 +65,7 @@ header {
 
 .dropdown .dropbtn { 
   border: none;
+  font-size: 38px;
   outline: none;
   padding: 14px 16px;
   background-color: inherit;
