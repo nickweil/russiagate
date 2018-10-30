@@ -90,6 +90,7 @@ header {
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
+  font-size: 20px;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
