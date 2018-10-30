@@ -1,19 +1,5 @@
 /* GENERAL */
-* {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-}
-html {
-  overflow-y: scroll;
-  background: #FFF;
-}
 
-header, main, #no-results, footer {
-  width: 1000px;
-  margin: 0 auto;
-}
-main {
-  min-height: 360px;
-}
 #left-column {
   float: left;
   width: 20%;
@@ -23,56 +9,7 @@ main {
   margin-left: 20%;
 }
 
-.clear:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 /* INPUT */
-header {
-  position: relative;
-  height: 80px;
-  margin-top: 5px;
-  border-bottom: 2px solid #eee;
-}
-#logo_image {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  float: left;
-}
-
-#logo_image img {
-  height: 50px;
-}
-
-#links
-{
-	display:inline-block;
-	float:right;	
-	margin-right:5px;
-	margin-top:35px;
-	height: 40px;
-}
-
-#links a, #links a:visited {
-	font-size: 38px;
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-#links img {
-  height: 33px;
-}
-
-#links a:hover
-{
-	color: #ff0000;
-}
 
 .left-column-header {
 	font-size: 14px;
@@ -420,20 +357,4 @@ a.clear-all:hover {
 
 .ais-show-more__active:before {
   content: "\f146";
-}
-
-/* FOOTER */
-footer {
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-footer a {
-  text-decoration: none;
-  color: #ff0000;
-}
-footer a:hover {
-  text-decoration: underline;
-  color: #ff0000;
 }
