@@ -43,8 +43,9 @@ header {
 {
 	overflow: hidden;	
 	margin-right:5px;
-	margin-top:-20px;
+	margin-top:0px;
 	height: 40px;
+	top: 20px;
 }
 
 .navbar a {
