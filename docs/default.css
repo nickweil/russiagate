@@ -50,7 +50,7 @@ header {
 .navbar a {
 	float: right;
 	text-align:center;
-	font-size: 38px;
+	font-size: 32px;
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
@@ -65,7 +65,7 @@ header {
 
 .dropdown .dropbtn { 
   border: none;
-  font-size: 38px;
+  font-size: 32px;
   outline: none;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
