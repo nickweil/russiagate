@@ -7,19 +7,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
   Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
-  <link rel="stylesheet" href="../search-default.css">
+  <link rel="stylesheet" href="../default.css">
 </head>
 
 <body>
-<header>
-	<div id=logo_image><a href="../"><img src="../spygate_search_logo.png"/></a></div>
-	<div id=links>
-		<a href="../">SEARCH</a><a href=".">ABOUT</a>
-		<!--<a href="https://github.com/nickweil/russiagate">GIT</a>
-		<a href="https://twitter.com/spygateproject"><img id=twttrlogo src="../black_twitter_logo.png" onMouseOver="MouseRollover()" 
-onMouseOut="MouseOut()"/></a>-->
-	</div>
-</header>
+  <header>
+	<div id="logo_image"><a href="."><img src="spygate_search_logo.png"/></a></div>
+	<div class="navbar">
+		<a href=".">ABOUT</a>
+		<a href=".">RESOURCES</a>
+		<div class="dropdown">
+			<button class="dropbtn">INTERACTIVES<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="../">SEARCH ORIGINAL TEXTS</a>
+				<a href="../alt">SEARCH FORMATTED TEXTS</a>
+				<a href="../timeline">SPYGATE TIMELINE</a>
+			</div>
+		</div>
+  </header>
   
 <main>
 <br/>
