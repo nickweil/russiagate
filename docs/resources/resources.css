@@ -1,0 +1,15 @@
+/* GENERAL */
+
+/* MAIN */
+
+/* GRID */
+
+.grid-row {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  margin: 0;
+}
