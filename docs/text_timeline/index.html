@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spygate Timeline</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Always use `2.x` versions in production rather than `2` to mitigate any side effects on your website,
+  Find the latest version on InstantSearch.js website: https://community.algolia.com/instantsearch.js/v2/guides/usage.html -->
+  <link rel="stylesheet" href="../default.css">
+	    <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+</head>
+
+<body>
+  <header>
+	<div id="logo_image"><a href="."><img src="../spygate_search_logo.png"/></a></div>
+	<div class="navbar">
+		<a href="../about">ABOUT</a>
+		<a href="../about">RESOURCES</a>
+		<div class="dropdown">
+			<button class="dropbtn">INTERACTIVES<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="../">SEARCH ORIGINAL TEXTS</a>
+				<a href="../alt">SEARCH FORMATTED TEXTS</a>
+				<a href="../timeline">SPYGATE TIMELINE</a>
+			</div>
+		</div>
+  </header>
+  
+<main>
+
+    <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+    <script src="d3.min.js?v=3.2.8"></script>
+
+    <script type="text/javascript"charset="utf-8">
+        d3.text("timeline_of_events.csv", function(data) {
+            var parsedCSV = d3.csv.parseRows(data);
+
+            var container = d3.select("body")
+                .append("table")
+
+                .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+        });
+    </script>
+</main>
+
+  <footer>
+    Source Code on <a href="https://github.com/nickweil/russiagate">Github</a> -
+    Contact spygatetexts@protonmail.com for more information
+  </footer>
+
+</body>
+
+
+
+</html>
