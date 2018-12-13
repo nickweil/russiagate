@@ -75,7 +75,7 @@
 			iconSize: [60,50]
 		});
 		// add GeoJSON layer to the map once the file is loaded
-		L.geoJson(data),{
+		L.geoJson(data,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: ratIcon});
 				marker.bindPopup(feature.properties.Location + '<br/>' + feature.properties.OPEN_DT);
