@@ -78,7 +78,7 @@
 		L.geoJson(data,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: ratIcon});
-				marker.bindPopup(feature.properties.Location + '<br/>' + feature.properties.OPEN_DT);
+				marker.bindPopup(feature.properties.Location + '<br/>' + feature.properties.Notes);
 				return marker;
 			}
 		}).addTo(mymap);
