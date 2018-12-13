@@ -61,6 +61,10 @@
 		[51.503, -0.06],
 		[51.51, -0.047]
 	]).addTo(mymap);
+	
+	L.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+	L.circle.bindPopup("I am a circle.");
+	L.polygon.bindPopup("I am a polygon.");
 
 
 </script>
