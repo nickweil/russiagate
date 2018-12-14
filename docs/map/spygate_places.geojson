@@ -5,28 +5,124 @@
 
 [
 	{ 
-	"type": "Feature", 
-	"id": 1, 
-	"properties": {  
-		"Location": "83-85 Cresthill Rd  Brighton  MA  02135", 
-		"Notes": "Orbis HQ"
+		"type": "Feature", 
+		"id": 1, 
+		"properties": {  
+			"Location": "1700 Connecticut Ave NW, Washington, DC 20009", 
+			"Notes": "Fusion GPS Office"
 		}, 
-	"geometry": { 
-		"type": "Point", 
-		"coordinates": [ -71.157609, 42.355988 ] 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 38.91275, -77.04559 ] 
 		} 
 	}
 	,
 	{ 
-	"type": "Feature", 
-	"id": 1, 
-	"properties": {  
-		"Location": "83-85 Cresthill Rd  Brighton  MA  02135", 
-		"Notes": "Orbis HQ"
+		"type": "Feature", 
+		"id": 2, 
+		"properties": {  
+			"Location": "1127 Connecticut Ave NW, Washington, DC 20036", 
+			"Notes": "The Mayflower Hotel"
 		}, 
-	"geometry": { 
-		"type": "Point", 
-		"coordinates": [ -70.157609, 41.355988 ] 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 38.9044, -77.03975 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 3, 
+		"properties": {  
+			"Location": "935 Pennsylvania Ave NW, Washington, DC 20535", 
+			"Notes": "FBI Headquarters"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 38.89556, -77.02496 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 4, 
+		"properties": {  
+			"Location": "Constitution Ave NW, Washington, DC 20530", 
+			"Notes": "DOJ Headquarters"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 38.89237, -77.0251 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 5, 
+		"properties": {  
+			"Location": "Via del Casale di S. Pio V, 44, 00165 Roma RM, Italy", 
+			"Notes": "Link Campus"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 41.89262, 12.4327 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 6, 
+		"properties": {  
+			"Location": "33 Nine Elms Ln, London SW11 7US, UK", 
+			"Notes": "US Embassy, London"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 51.48256, -0.13223 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 7, 
+		"properties": {  
+			"Location": "Longford TW6, UK", 
+			"Notes": "Heathrow Airport"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 51.47002, -0.45429 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 8, 
+		"properties": {  
+			"Location": "9-11 Grosvenor Gardens, Westminster, London SW1W 0BD, UK", 
+			"Notes": "Orbis Business Intelligence Office"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 51.49776, -0.14645 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 9, 
+		"properties": {  
+			"Location": "Australia House, Strand, London WC2B 4LA, UK", 
+			"Notes": "Australian High Commission"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 51.51288, -0.1156 ] 
+		} 
+	}
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "8 Lincoln's Inn Fields, London WC2A 3BP, UK", 
+			"Notes": "London Centre of International Law Practice"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 51.5169, -0.11787 ] 
 		} 
 	}
 ]
