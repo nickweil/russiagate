@@ -133,5 +133,70 @@
 			"coordinates": [ -0.11787, 51.5169 ] 
 		} 
 	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "Hubble Rd, Cheltenham GL51 0EX, UK", 
+			"Notes": "GCHQ Cheltenham"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -2.12444, 51.89951 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "1 Saarinen Cir, Dulles, VA 20166", 
+			"Notes": "Dulles International Airport"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -77.45653, 38.95311 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "1000 Colonial Farm Rd, McLean, VA 22101", 
+			"Notes": "Central Intelligence Agency"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -77.14512, 38.95211 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "1739 N St NW, Washington, DC 20036", 
+			"Notes": "Tabard Inn"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -77.03995, 38.9075 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "1600 Pennsylvania Ave NW, Washington, DC 20500", 
+			"Notes": "The White House"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -77.03657, 38.89766 ] 
+		} 
+	}
 ]
 }
