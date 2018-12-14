@@ -263,5 +263,57 @@
 			"coordinates": [ -73.9911, 40.69506 ] 
 		} 
 	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "Lypska St, Kyiv, Ukraine, 02000", 
+			"Notes": "Former Party of Regions Headquarters"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 30.53549, 50.44459 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "Aviakonstructor Igor Sikorsky St, 4, Kyiv, Ukraine, 04112", 
+			"Notes": "U.S. Embassy in Ukraine, Kyiv"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ 30.43209, 50.46495 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "3601 S Broad St, Philadelphia, PA 19148", 
+			"Notes": "Wells Fargo Center, DNC Convention 2016"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -75.17197, 39.9012 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "1 Center Ct, Cleveland, OH 44115", 
+			"Notes": "Quicken Loans Arena, RNC Convention 2016"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -81.68821, 41.49647 ] 
+		} 
+	}
 ]
 }
