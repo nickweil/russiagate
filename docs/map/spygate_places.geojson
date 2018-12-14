@@ -29,6 +29,7 @@
 			"coordinates": [ 38.9044, -77.03975 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 3, 
@@ -41,6 +42,7 @@
 			"coordinates": [ 38.89556, -77.02496 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 4, 
@@ -53,6 +55,7 @@
 			"coordinates": [ 38.89237, -77.0251 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 5, 
@@ -65,6 +68,7 @@
 			"coordinates": [ 41.89262, 12.4327 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 6, 
@@ -77,6 +81,7 @@
 			"coordinates": [ 51.48256, -0.13223 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 7, 
@@ -89,6 +94,7 @@
 			"coordinates": [ 51.47002, -0.45429 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 8, 
@@ -101,6 +107,7 @@
 			"coordinates": [ 51.49776, -0.14645 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 9, 
@@ -113,6 +120,7 @@
 			"coordinates": [ 51.51288, -0.1156 ] 
 		} 
 	}
+	,
 	{ 
 		"type": "Feature", 
 		"id": 10, 
