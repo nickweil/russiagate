@@ -250,5 +250,18 @@
 			"coordinates": [ -77.01569, 38.8979 ] 
 		} 
 	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "300 Cadman Plaza W, Brooklyn, NY 11201", 
+			"Notes": "Hillary Campaign Headquarters"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -73.9911, 40.69506 ] 
+		} 
+	}
 ]
 }
