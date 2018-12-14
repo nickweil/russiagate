@@ -198,5 +198,57 @@
 			"coordinates": [ -77.03657, 38.89766 ] 
 		} 
 	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "725 5th Ave, New York, NY 10022", 
+			"Notes": "Trump Tower"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -73.97379, 40.76242 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "900 Lamington Rd, Bedminster Township, NJ 07921", 
+			"Notes": "Trump National Golf Club Bedminster"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -74.69696, 40.65375 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "26 Federal Plaza, New York, NY 10278", 
+			"Notes": "FBI New York Field Office"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -74.00422, 40.7156 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "601 4th St NW, Washington, DC 20535", 
+			"Notes": "FBI Washington Field Office"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [ -77.01569, 38.8979 ] 
+		} 
+	}
 ]
 }
