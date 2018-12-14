@@ -315,5 +315,44 @@
 			"coordinates": [ -81.68821, 41.49647 ] 
 		} 
 	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "Sunny Isles Beach", 
+			"Notes": "Restaurant, Greenberg and Stone meet"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [  -80.12338, 25.94287 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "The Old Schools, Trinity Ln, Cambridge CB2 1TN, UK", 
+			"Notes": "University of Cambridge"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [  0.1149, 52.20426 ] 
+		} 
+	}
+	,
+	{ 
+		"type": "Feature", 
+		"id": 10, 
+		"properties": {  
+			"Location": "9800 Savage Rd #6623, Fort Meade, MD 20755", 
+			"Notes": "National Security Agency"
+		}, 
+		"geometry": { 
+			"type": "Point", 
+			"coordinates": [  -76.77133, 39.10866 ] 
+		} 
+	}
 ]
 }
