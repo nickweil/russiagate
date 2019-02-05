@@ -116,21 +116,14 @@
   margin: 0;
 }
 
-.hit-sender {
-  text-align: left;
-  width: 6%;
-}
-.hit-sender img {
-  max-width: 100%;
-}
 
 .hit-image {
+  font-size: 14px;
+  font-weight: 300;
   align-self: flex-end;
-  width: 78%;
-}
-
-.hit-image img {
-  max-width: 100%;
+  width: 80%;
+  margin-left: 3%;
+  text-align: left;
 }
 
 .hit-content {
