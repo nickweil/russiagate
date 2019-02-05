@@ -1,9 +1,9 @@
 
 var search = instantsearch({
   // Replace with your own values
-  appId: 'DTH6V8NWJ2',
-  apiKey: 'fd1f8a02a87cf784faf55a8a686700e7', // search only API key, no ADMIN key
-  indexName: 'texts',
+  appId: 'D8VGN4PNJ1',
+  apiKey: '4270d4a67285f5c67de12baa23164f98', // search only API key, no ADMIN key
+  indexName: 'timeline_of_events',
   urlSync: true,
   searchParameters: {
     hitsPerPage: 100
@@ -31,31 +31,12 @@ search.addWidget(
     }
   })
 );
-
-search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#batch-refinement',
-      attributeName: 'batch',
-      templates: {
-        header: 'Batch'
-      }
-    })
-  );
   
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#sender-refinement',
-      attributeName: 'sender',
-      templates: {
-        header: 'Sender'
-      }
-    })
-  );
   
     search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#weekday-refinement',
-      attributeName: 'weekday',
+      attributeName: 'day_of_week',
       templates: {
         header: 'Day of the week'
       }
