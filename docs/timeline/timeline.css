@@ -1,0 +1,77 @@
+#myInput {
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  font-size: 16px; /* Increase font-size */
+  padding: 6px 6px 6px 12px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-top: 12px; /* Add some space above the input */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#topbar {
+	display:flex;
+}
+
+#searchbar {
+	width: 20%;
+}
+
+#toptext {
+	width: 70%;
+	vertical-align: middle;
+	padding: 12px; /* Add padding */
+}
+
+#toptext i {
+	font-size: 14px; /* Increase font-size */
+}
+
+#event {
+	display: flex;
+}
+
+#eventleft {
+	width: 15%;
+}
+
+#eventright {
+	width: 80%;
+	align-self: flex-end;
+}
+
+#eventright {
+	font-size: 10px;
+	text-align: right;
+}
+
+#myTable {
+  float:left;
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 16px; /* Increase font-size */
+  table-layout: fixed;
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+/* Column widths are based on these cells */
+.col1 {
+  width: 20%;
+}
+.col2 {
+  width: 80%;
+}
