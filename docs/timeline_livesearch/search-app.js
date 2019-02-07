@@ -1,5 +1,5 @@
 
-const searchClient = algoliasearch('D8VGN4PNJ1', '4270d4a67285f5c67de12baa23164f98');
+const searchClient = algoliasearch('D8VGN4PNJ1', 'ddf789270064fbfe6bda438a87cafd02');
 
 const search = instantsearch({
   indexName: 'timeline_of_events',
