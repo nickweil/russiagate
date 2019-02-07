@@ -12,7 +12,7 @@ var search = instantsearch({
 // SEARCH BOX
 search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#search-input'
+    container: '#search-input',
 	placeholder: 'search...'
   })
 );
