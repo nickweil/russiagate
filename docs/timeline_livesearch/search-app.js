@@ -18,14 +18,14 @@ search.addWidget(
 );
 
 var hitTemplate =
-  '<article class="hit" id="{{unix_timestamp}}">' +
+  '<div class="hit" id="{{unix_timestamp}}">' +
       '<div class="hit-content">' +
         '<p class="hit-category-breadcrumb">{{date}} {{day_of_week}}</p>' +
       '</div>' +
 	  '<div class="hit-image">' +
         '<p class="hit-category-breadcrumb">{{event}} </p>' +
       '</div>' +
-  '</article>';
+  '</div>';
   
 var noResultsTemplate =
   '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
