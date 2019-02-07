@@ -1,3 +1,5 @@
+'use strict';
+/* global instantsearch */
 
 var search = instantsearch({
   appId: 'DTH6V8NWJ2',
