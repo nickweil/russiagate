@@ -1,13 +1,7 @@
 
-var search = instantsearch({
-  // Replace with your own values
-  appId: 'D8VGN4PNJ1',
-  apiKey: '4270d4a67285f5c67de12baa23164f98', // search only API key, no ADMIN key
+const search = instantsearch({
   indexName: 'timeline_of_events',
-  urlSync: true,
-  searchParameters: {
-    hitsPerPage: 100
-  }
+  searchClient: algoliasearch('D8VGN4PNJ1','4270d4a67285f5c67de12baa23164f98'),
 });
 
 /*texts.setSettings({
@@ -21,22 +15,55 @@ search.addWidget(
   })
 );
 
+var hitTemplate =
+  '<article class="hit" id="{{unix_timestamp}}">' +
+      '<div class="hit-content">' +
+        '<p class="hit-category-breadcrumb">{{date}} {{day_of_week}}</p>' +
+      '</div>' +
+	  '<div class="hit-image">' +
+        '<p class="hit-category-breadcrumb">{{#helpers.highlight}}{ "attribute": "event" }{{/helpers.highlight}} </p>' +
+      '</div>' +
+  '</article>';
+
+    <div class="hit" id="{{unix_timestamp}}">
+    <div class="hit-content">
+        <p class="hit-category-breadcrumb">{{{date}}} {{{day_of_week}}}</p>
+    </div>
+	<div class="hit-image">
+		<p class="hit-category-breadcrumb">{{{_highlightResult.event.value}}} </p>
+    </div>
+  
+var noResultsTemplate =
+  '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
+
+var menuTemplate =
+  '<a href="javascript:void(0);" class="facet-item {{#isRefined}}active{{/isRefined}}"><span class="facet-name"><i class="fa fa-angle-right"></i> {{label}}</span class="facet-name"></a>';
+
+var facetTemplateCheckbox =
+  '<a href="javascript:void(0);" class="facet-item">' +
+    '<input type="checkbox" class="{{cssClasses.checkbox}}" value="{{label}}" {{#isRefined}}checked{{/isRefined}} />{{label}}' +
+    '<span class="facet-count">({{count}})</span>' +
+  '</a>';
+
+var facetTemplateColors =
+  '<a href="javascript:void(0);" data-facet-value="{{label}}" class="facet-color {{#isRefined}}checked{{/isRefined}}"></a>';
+
 // Add this after the previous JavaScript code
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#hits',
+	hitsPerPage: 100,
     templates: {
-      item: document.getElementById('hit-template').innerHTML,
-      empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
+      item: hitTemplate,
+      empty: noResultsTemplate
     }
   })
 );
   
-  
     search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#weekday-refinement',
-      attributeName: 'day_of_week',
+      attribute: 'day_of_week',
       templates: {
         header: 'Day of the week'
       }
@@ -56,36 +83,3 @@ search.addWidget(
 
 // Add this after all the search.addWidget() calls
 search.start();
-
-
-
-// ---------------------
-//
-//  Helper functions
-//
-// ---------------------
-function getTemplate(templateName) {
-  return document.querySelector(`#${templateName}-template`).innerHTML;
-}
-
-function getHeader(title) {
-  return `<h5>${title}</h5>`;
-}
-
-function getCategoryBreadcrumb(item) {
-  const highlightValues = item._highlightResult.categories || [];
-  return highlightValues.map(category => category.value).join(' > ');
-}
-
-function getStarsHTML(rating, maxRating) {
-  let html = '';
-  const newRating = maxRating || 5;
-
-  for (let i = 0; i < newRating; ++i) {
-    html += `<span class="ais-star-rating--star${
-      i < rating ? '' : '__empty'
-    }"></span>`;
-  }
-
-  return html;
-}
