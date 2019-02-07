@@ -24,14 +24,6 @@ var hitTemplate =
         '<p class="hit-category-breadcrumb">{{#helpers.highlight}}{ "attribute": "event" }{{/helpers.highlight}} </p>' +
       '</div>' +
   '</article>';
-
-    <div class="hit" id="{{unix_timestamp}}">
-    <div class="hit-content">
-        <p class="hit-category-breadcrumb">{{{date}}} {{{day_of_week}}}</p>
-    </div>
-	<div class="hit-image">
-		<p class="hit-category-breadcrumb">{{{_highlightResult.event.value}}} </p>
-    </div>
   
 var noResultsTemplate =
   '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
