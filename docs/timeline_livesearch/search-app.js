@@ -23,7 +23,7 @@ var hitTemplate =
         '<p class="hit-category-breadcrumb">{{date}} {{day_of_week}}</p>' +
       '</div>' +
 	  '<div class="hit-image">' +
-        '<p class="hit-category-breadcrumb">{{#helpers.highlight}}{ "attribute": "event" }{{/helpers.highlight}} </p>' +
+        '<p class="hit-category-breadcrumb">{{event}} </p>' +
       '</div>' +
   '</article>';
   
