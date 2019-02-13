@@ -120,14 +120,14 @@
   font-size: 14px;
   font-weight: 300;
   align-self: flex-end;
-  width: 80%;
+  width: 75%;
   text-align: left;
 }
 
 .hit-content {
   font-size: 14px;
   font-weight: 300;
-  width: 15%;
+  width: 20%;
   margin-left: 3%;
   text-align: right;
 }
