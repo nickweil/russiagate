@@ -1,14 +1,14 @@
 
-const searchClient = algoliasearch('D8VGN4PNJ1', 'ddf789270064fbfe6bda438a87cafd02');
-
-const search = instantsearch({
+var search = instantsearch({
+  // Replace with your own values
+  appId: 'D8VGN4PNJ1',
+  apiKey: 'ddf789270064fbfe6bda438a87cafd02', // search only API key, no ADMIN key
   indexName: 'timeline_of_events',
-  searchClient,
+  urlSync: true,
+  searchParameters: {
+    hitsPerPage: 200
+  }
 });
-
-/*texts.setSettings({
-  paginationLimitedTo: 5000
-});*/
 
 // Add this after the previous JavaScript code
 search.addWidget(
@@ -17,39 +17,13 @@ search.addWidget(
   })
 );
 
-var hitTemplate =
-  '<div class="hit" id="{{unix_timestamp}}">' +
-      '<div class="hit-content">' +
-        '<p class="hit-category-breadcrumb">{{date}} {{day_of_week}}</p>' +
-      '</div>' +
-	  '<div class="hit-image">' +
-        '<p class="hit-category-breadcrumb">{{event}} </p>' +
-      '</div>' +
-  '</div>';
-  
-var noResultsTemplate =
-  '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
-
-var menuTemplate =
-  '<a href="javascript:void(0);" class="facet-item {{#isRefined}}active{{/isRefined}}"><span class="facet-name"><i class="fa fa-angle-right"></i> {{label}}</span class="facet-name"></a>';
-
-var facetTemplateCheckbox =
-  '<a href="javascript:void(0);" class="facet-item">' +
-    '<input type="checkbox" class="{{cssClasses.checkbox}}" value="{{label}}" {{#isRefined}}checked{{/isRefined}} />{{label}}' +
-    '<span class="facet-count">({{count}})</span>' +
-  '</a>';
-
-var facetTemplateColors =
-  '<a href="javascript:void(0);" data-facet-value="{{label}}" class="facet-color {{#isRefined}}checked{{/isRefined}}"></a>';
-
 // Add this after the previous JavaScript code
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#hits',
-	hitsPerPage: 100,
     templates: {
-      item: hitTemplate,
-      empty: noResultsTemplate
+      item: document.getElementById('hit-template').innerHTML,
+      empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
     }
   })
 );
@@ -57,7 +31,7 @@ search.addWidget(
     search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#weekday-refinement',
-      attribute: 'day_of_week',
+      attributeName: 'weekday',
       templates: {
         header: 'Day of the week'
       }
