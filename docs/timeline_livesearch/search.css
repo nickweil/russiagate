@@ -82,19 +82,7 @@
 	font-size: 14px;
 }
 
-#batch-refinement {
-	margin-left: 0%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#sender-refinement {
-	margin-left: 0%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#sender-refinement .ais-refinement-list--label{
+#weekday-refinement {
 	margin-left: 0%;
 	margin-top: 20px;
 	margin-bottom: 20px;
