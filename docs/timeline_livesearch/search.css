@@ -97,7 +97,7 @@
 
 .hit {
   font-size: 0;
-  padding: 0px 0;
+  padding: 2px 0;
   display: flex;
 }
 .hit-name {
