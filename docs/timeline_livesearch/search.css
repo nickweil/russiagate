@@ -119,15 +119,11 @@
   margin-right: 1%;
 }
 
-.hit-event{
+.hit-date .hit-event{
   float: left;
   margin-left: 0px;
   padding: 4px;
   border-radius: 3px;
-}
-.hit-date.hit-event .hit-name {
-  font-weight: normal;
-  margin-top: 0;
 }
 
 .hit-event em {
