@@ -31,7 +31,7 @@ search.addWidget(
     search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#weekday-refinement',
-      attributeName: 'weekday',
+      attributeName: 'day_of_week',
       templates: {
         header: 'Day of the week'
       }
