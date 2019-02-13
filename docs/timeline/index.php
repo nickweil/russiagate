@@ -38,7 +38,7 @@
 			</button>
 			<div class="dropdown-content">
 				<a href="../">SEARCH ORIGINAL TEXTS</a>
-				<a href=".">SEARCH RAW TIMELINE</a>
+				<a href="../timeline_live">SEARCH RAW TIMELINE</a>
 				<a href="../map">EXPLORE MAP</a>
 			</div>
 		</div>

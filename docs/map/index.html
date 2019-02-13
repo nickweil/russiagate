@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Spygate Map</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../default.css">
   <link rel="stylesheet" href="map.css">
@@ -14,28 +13,36 @@
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
    crossorigin=""></script>
-	
 </head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127878804-1');
+</script>
 
 <body>
+
   <header>
-	<div id="logo_image"><a href="."><img src="../spygate_search_logo.png"/></a></div>
+	<div id="logo_image"><a href="../"><img src="../spygate_search_logo.png"/></a></div>
 	<div class="navbar">
 		<a href="../about">ABOUT</a>
-		<a href="../about">RESOURCES</a>
+		<a href="../resources">RESOURCES</a>
 		<div class="dropdown">
 			<button class="dropbtn">INTERACTIVES<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
 				<a href="../">SEARCH ORIGINAL TEXTS</a>
-				<a href="../alt">SEARCH FORMATTED TEXTS</a>
-				<a href="../timeline">SPYGATE TIMELINE</a>
+				<a href="../timeline_live">SEARCH RAW TIMELINE</a>
+				<a href=".">EXPLORE MAP</a>
 			</div>
 		</div>
   </header>
-<main>
+  
+	<main>
 
-<div id="mapid"></div>
+	<div id="mapid"></div>
 <script>
 
 	var mymap = L.map('mapid').setView([43.12, -35.00], 3);
@@ -71,8 +78,8 @@
 	// load GeoJSON from an external file
 	$.getJSON("spygate_places.geojson",function(data){
 		var ratIcon = L.icon({
-			iconUrl: 'spy_icon.png',
-			iconSize: [48,40]
+			iconUrl: 'red_marker.png',
+			iconSize: [40,40]
 		});
 		// add GeoJSON layer to the map once the file is loaded
 		L.geoJson(data,{
@@ -86,9 +93,8 @@
 
 
 </script>
-
-
-</main>
+		
+	</main>
 
   <footer>
     Source Code on <a href="https://github.com/nickweil/russiagate">Github</a> -
@@ -97,6 +103,6 @@
 
 </body>
 
-<!--<script src="map.js"></script>-->
+
 
 </html>
