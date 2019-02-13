@@ -116,7 +116,7 @@
   margin: 0;
 }
 
-.hit-date {
+.hit-event {
   font-size: 14px;
   font-weight: 300;
   align-self: flex-end;
@@ -132,18 +132,18 @@
   text-align: left;
 }
 
-.hit-date{
+.hit-event{
   float: left;
   margin-left: 0px;
   padding: 4px;
   border-radius: 3px;
 }
-.hit-date.hit-date .hit-name {
+.hit-date.hit-event .hit-name {
   font-weight: normal;
   margin-top: 0;
 }
 
-.hit-date em {
+.hit-event em {
   font-style: normal;
   color: #ff0000;
   border-bottom: solid 1px rgba(244, 107, 91, 0.5);
