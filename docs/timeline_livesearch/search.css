@@ -116,7 +116,7 @@
   margin: 0;
 }
 
-.hit-image {
+.hit-date {
   font-size: 14px;
   font-weight: 300;
   align-self: flex-end;
@@ -124,32 +124,32 @@
   text-align: left;
 }
 
-.hit-content {
+.hit-date {
   font-size: 14px;
   font-weight: 300;
   width: 20%;
   margin-left: 3%;
-  text-align: right;
+  text-align: left;
 }
 
-.hit-content{
+.hit-date{
   float: left;
   margin-left: 0px;
   padding: 4px;
   border-radius: 3px;
 }
-.hit-content.hit-content .hit-name {
+.hit-date.hit-date .hit-name {
   font-weight: normal;
   margin-top: 0;
 }
 
-.hit-content em {
+.hit-date em {
   font-style: normal;
   color: #ff0000;
   border-bottom: solid 1px rgba(244, 107, 91, 0.5);
 }
 
-.hit-content p {
+.hit-date p {
   font-size: 14px;
   text-align: right;
 }
@@ -166,7 +166,7 @@
     color: inherit;
 }
 
-.hit-content .hit-description {
+.hit-date .hit-description {
   color: #868686;
   margin: 1px 0 10px 0;
   font-size: 14px;
