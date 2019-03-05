@@ -82,19 +82,13 @@
 	font-size: 14px;
 }
 
-#batch-refinement, #search-suggestions {
+#batch-refinement, #search-suggestions, #sender-refinement {
 	margin-left: 0%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-#sender-refinement {
-	margin-left: 0%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#sender-refinement .ais-refinement-list--label{
+.ais-refinement-list--label{
 	margin-left: 0%;
 	margin-top: 20px;
 	margin-bottom: 20px;
