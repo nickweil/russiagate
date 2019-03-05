@@ -60,6 +60,20 @@ search.addWidget(
         header: 'Day of the week'
       }
     })
+	
+	search.addWidget(
+    instantsearch.widgets.rangeSlider({
+      container: '#date-slider',
+      attributeName: 'unixtimestamp',
+      templates: {
+        header: 'Day of the week'
+      },
+	  tooltips: {
+		  format: function(rawValue) {
+			  return '$' +Math.round(rawValue).toLocaleString();
+		  }
+	  }
+    })
   );
 
 
