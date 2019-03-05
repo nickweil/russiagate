@@ -61,7 +61,7 @@ search.addWidget(
       }
     })
 	
-	search.addWidget(
+/*	search.addWidget(
     instantsearch.widgets.rangeSlider({
       container: '#date-slider',
       attributeName: 'unixtimestamp',
@@ -74,7 +74,7 @@ search.addWidget(
 		  }
 	  }
     })
-  );
+  );*/
 
 
 // Add this after the other search.addWidget() calls
