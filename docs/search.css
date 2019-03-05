@@ -23,7 +23,8 @@
 }
 
 .ais-range-slider {
-  max-width: 100%;
+  max-width: 92%;
+  margin-left: 5%;
 }
 
 .ais-search-box {
