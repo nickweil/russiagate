@@ -57,6 +57,8 @@ search.addWidget(
       }
     },
 	pips: false,
+	man: 1356998400,
+	max: 1501545600,
   })
   );  
 
