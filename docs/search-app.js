@@ -76,7 +76,7 @@ search.addWidget(
 		var date = new Date(unix_timestamp*1000);
 		var year = date.getFullYear();
 		var month = months_arr[date.getMonth()];
-		var convdate = month+year.substr(-2);
+		var convdate = month+year;
 		return convdate;
       }
     }
