@@ -72,7 +72,7 @@ search.addWidget(
     tooltips: {
       format: function(rawValue) {
 		var unix_timestamp = rawValue;
-		var months_arr = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+		var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 		var date = new Date(unix_timestamp*1000);
 		var year = date.getFullYear().toString().substring(2);
 		var month = months_arr[date.getMonth()];

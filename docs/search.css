@@ -18,7 +18,7 @@
 	text-transform: uppercase;
 	border-bottom: 2px solid #eee;
 }
-.ais-refinement-list--header.ais-header {
+.ais-refinement-list--header.ais-header, .ais-range-slider--header.ais-header {
 	font-size: 14px;
 }
 
@@ -82,7 +82,7 @@
 	margin-bottom: 20px;
 }
 
-.ais-refinement-list--label{
+.ais-refinement-list--label, .ais-range-slider--label{
 	margin-left: 0%;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -239,8 +239,7 @@
   cursor: pointer;
 }
 
-.ais-refinement-list--label,
-.ais-menu--link {
+.ais-refinement-list--label, .ais-range-slider--label, .ais-menu--link {
   cursor: pointer;
   line-height: 1.5em;
   font-size: 14px;
