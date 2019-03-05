@@ -80,7 +80,7 @@ search.addWidget(
 		return convdate;
       }
     }
-	pips: false
+	pips: false,
   })
   );
 
