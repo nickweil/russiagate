@@ -62,6 +62,20 @@ search.addWidget(
     })
   );
 
+  search.addWidget(
+  instantsearch.widgets.rangeSlider({
+    container: '#date-slider',
+    attributeName: 'unixtimestamp',
+    templates: {
+      header: 'Date'
+    },
+    tooltips: {
+      format: function(rawValue) {
+        return '$' + Math.round(rawValue).toLocaleString();
+      }
+    }
+  })
+  );
 
 // Add this after the other search.addWidget() calls
 search.addWidget(
