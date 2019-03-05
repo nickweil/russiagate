@@ -272,9 +272,9 @@
   color: #999;
 }
 
-#type.facet .ais-refinement-list--checkbox {
+/*#type.facet .ais-refinement-list--checkbox {
   display: none;
-}
+}*/
 
 .ais-range-slider--handle {
 	border: 1px solid #ff0000;
