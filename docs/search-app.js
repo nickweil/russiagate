@@ -71,7 +71,13 @@ search.addWidget(
     },
     tooltips: {
       format: function(rawValue) {
-        return Math.round(rawValue).toLocaleString();
+		var unix_timestamp = rawValue;
+		var months_arr = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+		var date = new Date(unix_timestamp*1000);
+		var year = date.getFullYear();
+		var month = months_arr[date.getMonth()];
+		var convdate = month+year.substr(-2);
+		return convdate;
       }
     }
   })
