@@ -276,6 +276,14 @@
   display: none;
 }
 
+.ais-range-slider--handle {
+	border: 1px solid #ff0000;
+}
+
+.ais-range-slider .rheostat-horizontal .rheostat-progress {
+    background-color: #ff0000;
+}
+
 /* NO RESULTS */
 .no-results #pagination, .no-results #sort-by, .no-results #stats, .no-results #facets {
   display: none;

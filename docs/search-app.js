@@ -67,7 +67,7 @@ search.addWidget(
     container: '#date-slider',
     attributeName: 'unixtimestamp',
     templates: {
-      header: 'Date'
+      header: 'Date Filter'
     },
     tooltips: {
       format: function(rawValue) {
