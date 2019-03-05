@@ -79,7 +79,7 @@ search.addWidget(
 		var convdate = month+year;
 		return convdate;
       }
-    }
+    },
 	pips: false,
   })
   );
