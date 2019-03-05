@@ -22,6 +22,10 @@
 	font-size: 14px;
 }
 
+.ais-range-slider {
+  max-width: 100%;
+}
+
 .ais-search-box {
   max-width: 100%;
 }
