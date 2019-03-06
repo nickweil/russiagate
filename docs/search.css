@@ -22,6 +22,11 @@
 	font-size: 14px;
 }
 
+.ais-range-slider {
+  max-width: 84%;
+  margin-left: 8%;
+}
+
 .ais-search-box {
   max-width: 100%;
 }
@@ -266,7 +271,6 @@
 .ais-menu--count,
 .ais-toggle--count {
   position: relative;
-  top: 3px;
   font-size: 14px;
   float: right;
   color: #999;
@@ -282,6 +286,11 @@
 
 .ais-range-slider .rheostat-horizontal .rheostat-progress {
     background-color: #ff0000;
+}
+
+.ais-range-slider--tooltip {
+  font-size: 14px;
+  color: #999;
 }
 
 /* NO RESULTS */
