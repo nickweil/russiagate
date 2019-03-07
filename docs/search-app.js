@@ -74,7 +74,7 @@ search.addWidget(
 		var unix_timestamp = rawValue;
 		var date = new Date(unix_timestamp*1000);
 		var year = date.getFullYear().toString().substring(2);
-		var month = date.getMonth();
+		var month = date.getMonth()+1;
 		var day = date.getDate();
 		var convdate = month+'/'+day+'/'+year;
 		return convdate;
