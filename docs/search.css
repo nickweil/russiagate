@@ -16,6 +16,10 @@
 
 /* MAIN */
 
+#date-slider {
+	height: 100%;
+}
+
 .left-column-header {
 	font-size: 14px;
 	margin: 0 0 6px;
