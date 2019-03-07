@@ -17,7 +17,6 @@
 /* MAIN */
 
 #date-slider {
-	height: 100%;
 	margin-left: 0%;
 	margin-top: 2px;
 	margin-bottom: 2px;
@@ -39,7 +38,7 @@
 }
 
 .ais-range-slider--tooltip {
-	font-size: 8px;
+	font-size: 10px;
 }
 
 .ais-search-box {
