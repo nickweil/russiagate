@@ -3,7 +3,6 @@
 #top-wide {
   width: 100%;
   height: 50px;
-  display: flex;
 }
 
 #left-column {
@@ -19,9 +18,9 @@
 
 #date-slider {
 	width: 90%;
+	margin-left: 5%;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	align-self: center;
 }
 
 .left-column-header {
