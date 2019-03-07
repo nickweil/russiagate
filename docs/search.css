@@ -35,7 +35,11 @@
 }
 
 .ais-range-slider--header.ais-header {
-	font-size: 4px;
+	font-size: 0px;
+}
+
+.ais-range-slider--tooltip {
+	font-size: 8px;
 }
 
 .ais-search-box {
