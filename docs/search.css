@@ -30,8 +30,12 @@
 	text-transform: uppercase;
 	border-bottom: 2px solid #eee;
 }
-.ais-refinement-list--header.ais-header, .ais-range-slider--header.ais-header {
+.ais-refinement-list--header.ais-header {
 	font-size: 14px;
+}
+
+.ais-range-slider--header.ais-header {
+	font-size: 4px;
 }
 
 .ais-search-box {
@@ -94,10 +98,15 @@
 	margin-bottom: 20px;
 }
 
-.ais-refinement-list--label, .ais-range-slider--label{
+.ais-refinement-list--label {
 	margin-left: 0%;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	font-size: 14px;
+}
+
+.ais-range-slider--label {
+	margin-left: 0%;
 	font-size: 4px;
 }
 
