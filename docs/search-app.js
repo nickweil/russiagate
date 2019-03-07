@@ -64,7 +64,7 @@ search.addWidget(
 
   search.addWidget(
   instantsearch.widgets.rangeSlider({
-    container: '#date-range',
+    container: '#date-slider',
     attributeName: 'unixtimestamp',
     templates: {
       header: 'Date Filter'
